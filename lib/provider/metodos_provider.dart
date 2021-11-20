@@ -1,4 +1,5 @@
 import 'package:flutter/cupertino.dart';
+import 'package:metodos_numericos/herramientas/newton_raphson.dart';
 
 class MetodosProvider with ChangeNotifier {
   List<int> _ecuacion = List.generate(11, (index) => 0);
@@ -61,15 +62,3 @@ class MetodosProvider with ChangeNotifier {
 }
 
 
-class Iteracion {
-  Iteracion(
-      this.iteracion, this.inicial, this.fx, this.fprimax, this.vfinal,this.error,this.errorp);
-
-  final String iteracion;
-  final String inicial;
-  final String fx;
-  final String fprimax;
-  final String vfinal;
-  final String error;
-  final String errorp;
-}
